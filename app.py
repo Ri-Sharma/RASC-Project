@@ -85,11 +85,11 @@ def main():
        prediction = model.predict(pred_arr)
         
        if prediction == 0:
-           st.write(f"The severity prediction is fatal injury⚠")
+           st.write(f"The severity prediction is fatal injury⚠ {prediction}")
        elif prediction == 1:
-           st.write(f"The severity prediction is serious injury")
+           st.write(f"The severity prediction is serious injury {prediction}")
        else:
-           st.write(f"The severity prediction is slight injury")
+           st.write(f"The severity prediction is slight injury {prediction}")
         
        st.write("Developed By: Rishi Sharma")
 
